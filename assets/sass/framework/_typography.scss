@@ -1,0 +1,17 @@
+// Typography
+// --------------------------------
+@import url(//fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(//fonts.googleapis.com/css?family=Lato:300,400,700);
+
+// Fonts
+// -------------------------
+$header-font-family: 'Oswald', sans-serif;
+$body-font-family: 'Lato', sans-serif;
+$paragraph-font-family: "Quattrocento Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$font-weight-normal: normal;
+$number-font-family: 'Karla', ariel, sans-serif;
+$body-font-weight: $font-weight-normal;
+$footer-font-size: 14px;
+
+// Font Path
+// $FontPath: "../../fonts" !default;

@@ -1,0 +1,49 @@
+/*!
+ * Ghost - Dev League
+ * -----------------------
+ */
+
+// START SCSS
+// Run following command relative to root folder
+// $ sass --watch css:css
+// It will detect changes in "sass" folder and overide "style.css"
+
+// Bootstrap
+// ---------------------------------------------------
+@import "framework/bootstrap/variables";
+@import "framework/bootstrap/bootstrap";
+
+// Mixin, Variables, Etc
+// ---------------------------------------------------
+@import "framework/config";
+@import "framework/media-queries";
+@import "framework/colors";
+@import "framework/typography";
+@import "framework/mixin";
+
+// Modules
+// ---------------------------------------------------
+@import "modules/buttons";
+@import "modules/forms";
+@import "modules/headings";
+@import "modules/images";
+@import "modules/links";
+@import "modules/circles";
+
+// Page Styles
+// ---------------------------------------------------
+// Partials
+@import "partials/base";
+@import "partials/header";
+@import "partials/footer";
+
+// Sections
+@import "sections/index";
+@import "sections/contact";
+@import "sections/about";
+@import "sections/gallery";
+@import "sections/blog";
+
+
+// Typography
+@import "modules/fonts";
