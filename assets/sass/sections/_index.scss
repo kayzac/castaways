@@ -1,5 +1,24 @@
 section.index {
-	h1 {
-		color: red;
-	}	
+
+  .wrapper {
+      width: 100%;
+  }
+
+  .about_wrapper {
+    background-image: url("http://placehold.it/1500x600");
+
+    .blue_transparent {
+      background-color: #3BA3AD;
+      opacity: 0.5;
+      height: 200px;
+      
+      .about_text {
+
+        h3.meet {
+          color: white;
+          text-align: center;
+        }
+      }
+    }
+  }
 }

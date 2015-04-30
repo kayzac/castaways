@@ -1,0 +1,32 @@
+footer {
+
+  background-color: #2A7178;
+  font-size: 16px;
+  color: #B4DBDC;
+
+  .row {
+
+    #source_copyright {
+
+      p.castaways_copyright {
+
+      }//closes p
+
+    }//closes #source copyright
+
+    #photos_copyright {
+
+      p.photography_copyright {
+
+        a.photolink {
+          color: #99E5FF;
+
+        }
+
+      }//closes p
+
+    }//closes #photos copyright
+
+  }//closes .row
+
+}//closes footer

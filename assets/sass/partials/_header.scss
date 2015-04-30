@@ -1,0 +1,64 @@
+// NAVIGATION
+
+
+.navbar.navbar-default {
+
+  .container-fluid {
+
+    .navbar-header {
+        
+      button.navbar-toggle {
+          
+        span.icon-bar {
+
+        } //icon-bar
+      } //navbar button
+
+      a.navbar-brand {
+          background-image: url(/images/logo.svg) !important;
+
+      } //closes navbar-brand
+    } //closes .navbar-header
+
+    .navbar-collapse {
+
+      ul.navbar-right {
+        
+        li{
+        
+          a.page-scroll {
+
+          } //closes page-scroll
+        } //closes li
+
+        li.dropdown {
+          
+          a.dropdown-toggle {
+
+            .caret {
+
+            } //closes caret
+
+            ul.dropdown-menu {
+              
+              li {
+
+                a {
+
+                } //closes a link in dropdown-menu
+
+              } //closes li of dropdown-menu
+
+            } //closes .dropdown-menu
+
+          } //closes .dropdown-toggle
+
+        } //closes li.dropdown
+
+      } //closes .navbar-right
+
+    } //closes .navbar-collapse
+
+  } //closes .container-fluid
+
+} //closes .navbar.navbar-default
