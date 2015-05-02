@@ -1,10 +1,12 @@
 footer {
-
-  background-color: #2A7178;
-  font-size: 16px;
-  color: #B4DBDC;
+  font-family: $body-font-family;
+  background-color: $footer-background-color;
+  font-size: $footer-size;
+  color: $footer-text-color;
 
   .row {
+      padding-top: 40px;
+      padding-bottom: 40px;
 
     #source_copyright {
 
@@ -19,7 +21,7 @@ footer {
       p.photography_copyright {
 
         a.photolink {
-          color: #99E5FF;
+          color: $footer-link-color;
 
         }
 
