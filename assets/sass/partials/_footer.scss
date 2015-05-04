@@ -10,7 +10,8 @@ footer {
 
     #source_copyright {
 
-      p.castaways_copyright {
+      p {
+        margin-left: 108px;
 
       }//closes p
 
@@ -19,6 +20,7 @@ footer {
     #photos_copyright {
 
       p.photography_copyright {
+        margin-left: 108px;
 
         a.photolink {
           color: $footer-link-color;

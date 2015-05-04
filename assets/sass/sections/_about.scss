@@ -1,4 +1,65 @@
 section {
   font-family: $body-font-family;
 
+  .wrapper {
+
+  	h3 {
+  		color: $about-grey;
+  		text-align: center;
+  	}
+
+  	.about_paragraph {
+		font-size: 18px;
+		color: $about-grey;
+		max-width: 62.5%;
+  	}
+  }
+
+  #ourstory {
+	color: $about-grey;
+  }
+
+  .mari_wrapper {
+	background-color: $mari-blue;
+
+	p {
+		float: left;
+	}
+
+	.mari_profile {
+		float: left;
+	}
+  }
+
+  .jasmine_wrapper {
+  	background-color: $jasmine-blue;
+
+  	p {
+  		float: right;
+  	}
+
+  	.jasmine_profile {
+  		float: right;
+  	}
+  }
+
+  #faq {
+
+  	h3 {
+  		color: $dark-grey;
+  	}
+
+  	p {
+  		font-size: 18px;
+  	}
+
+  	.faq_question {
+  		color: $blue-grey;
+  		
+  	}
+
+  	.faq_answer {
+  		color: $dark-grey;
+  	}
+  }
 }

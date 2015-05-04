@@ -3,8 +3,13 @@
 
 .navbar.navbar-default {
   font-family: $body-font-family;
+  background-color: $turquoise;
+  border: none;
 
   .container-fluid {
+    background-color: $turquoise;
+    padding-left: 108px;
+    padding-right: 108px;
 
     .navbar-header {
         
@@ -16,23 +21,34 @@
       } //navbar button
 
       a.navbar-brand {
-          background-image: url(/images/logo.svg) !important;
-
+        background-image: url('/images/logo.svg') !important;
+        background-size: 300px 300px;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-right: 210px;
+        padding-top: 140px;
+        margin-bottom: -20px;
       } //closes navbar-brand
     } //closes .navbar-header
 
     .navbar-collapse {
 
       ul.navbar-right {
+        margin-top: 40px;
+        // margin-bottom: -4px;
         
         li{
+          font-weight: $font-weight-thin;
+          font-size: 17px;          
         
           a.page-scroll {
-
+            color: white;
           } //closes page-scroll
         } //closes li
 
         li.dropdown {
+          font-size: 17px;
+          font-weight: $font-weight-thin;
           
           a.dropdown-toggle {
 
