@@ -1,4 +1,32 @@
 section {
   font-family: $body-font-family;
 
+  h3 {
+    font-weight: $font-weight-normal;
+    color: $dark-grey;
+  }
+
+  p.blogdate {
+    font-size: 17px;
+    color: $blue-grey;
+    margin-bottom: 40px;
+  }
+
+  .blogparagraphs {
+      margin-top: 40px;
+    
+    p.blogtext {
+      font-size: 19px;
+      color: $dark-grey;
+    }
+
+  }
+
+  .hr {
+    height: 1px;
+    background-color: $footer-text-color;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
 }

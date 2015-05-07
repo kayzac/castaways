@@ -1,4 +1,82 @@
 section {
   font-family: $body-font-family;
 
+  .container {
+
+    h2 {
+      margin-bottom: 40px;
+    }
+
+    p.contacttext {
+      margin-bottom: 30px;
+      color: $dark-grey;
+      font-size: 19px;
+      text-align: center;
+      font-weight: $font-weight-normal;
+      line-height: 1.5;
+
+      @media #{$xs} {
+        text-align: left;
+      }
+
+      .faqlink {
+        color: $blue-grey;
+      }
+    }
+
+    .contactbox {
+      margin-top: 40px;
+      width: 32.5%;
+      margin-left: auto;
+      margin-right: auto;
+
+      @media #{$xs} {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+      }
+      
+      form {
+
+        .form-group {
+
+          label {
+            font-weight: $font-weight-light;
+            font-size: 18px;
+          }
+        }
+      }
+      
+      .longforms {
+        width: 99%;
+
+        @media #{$xs} {
+          width: 100%;
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+
+      .form-horizontal {
+
+        .form-group {
+          margin-right: 0;
+          margin-left: 0;
+        }
+      }
+
+      form.personalinfo {
+        display: inline-block;
+
+        .form-group {
+          display: inline-block;
+        }
+      }
+
+      span {
+        font-size: 18px;
+        font-weight: $font-weight-light;
+      }
+    }
+  }
 }

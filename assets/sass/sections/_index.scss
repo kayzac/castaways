@@ -1,6 +1,52 @@
 section.index {
   // font-family: $body-font-family;
 
+  h2.meet {
+    font-weight: $font-weight-light;
+    text-align: left;
+  }
+
+  .content_div {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  
+  #carousel-example-generic {
+    margin-bottom: 0;
+  }
+  .carousel-inner {
+
+    .active {
+      height: 610px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 100%;
+
+    }
+
+    .item {
+      height: 610px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 100%;
+
+      @media #{$xs} {
+        height: 450px;
+      }
+
+      .carousel-caption {
+        font-size: 48px;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+
+        @media #{$xs} {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+
   .about_wrapper {
     background-image: url("/images/mari/girls.jpg");
     background-size: cover;
@@ -11,34 +57,36 @@ section.index {
     .blue_transparent {
       background-color: rgba(59, 163, 173, 0.85);
 
-      .content_div {
-        margin-bottom: 108px;
+      h2 {
+        color: white;
 
-        .aboutcontent {
-          margin-top: 108px;
-          margin-left: 108px;
-
-          h3.meet {
-            float: left;
-            text-align: center;
-            color: white;
-          }
-
-          .img_girls {
-            float: left;
-            height: auto;
-            width: 20%;
-          }
-        }
-
-        .about_button {
-          clear: left;
-
-          a.btn-about {
-
-          }
+        @media #{$xs} {
+          text-align: center;
+          line-height: 1.4;
         }
       }
+
+      .textlink {
+        padding-top: 100px;
+
+        @media #{$xs} {
+          text-align: center;
+          padding-top: 50px;
+        }
+      }
+
+      .circleimage {
+        width: 30%;
+        height: auto;
+        vertical-align: center;
+
+        @media #{$xs} {
+          width: 90%;
+          margin-right: auto;
+          margin-left: auto;
+        }
+      }
+
     } 
   }
 
@@ -52,25 +100,31 @@ section.index {
     .grey_transparent {
       background-color: rgba(226, 233, 231, 0.85);
 
-      .content_div {
-        margin-left: 108px;
+      .circles {
+        width: 25%;
+        float: left;
+        margin-right: 35px;
 
-        .gallerycontent {
+        @media #{$xs} {
+          width: 70%;
+          float: none;
+          margin-right: 0;
+          margin-bottom: 30px;
+        }
+      }
 
-          h3.meet {
-            float: right;
+      .othertextlink {
+        padding-top: 40px;
+
+        h2 {
+
+          @media #{$xs} {
             text-align: center;
           }
+        }
 
-          img.circles {
-            float: right;
-            height: auto;
-            width: 10%;
-            padding-right: 10px;
-          }
-
-          .gallery_button {
-          }
+        @media #{$xs} {
+          text-align: center;
         }
       }
     }
@@ -79,32 +133,55 @@ section.index {
   // SPLIT SECTION
 
   .splitcontent {
+    margin-top: 80px;
 
-    h2, {
+    h2 {
       color: $dark-grey;
+      font-weight: $font-weight-light;
+      border-top: solid 1px $footer-text-color;
+      border-bottom: solid 1px $footer-text-color;
+      padding: 5px 0;
+      margin-bottom: 40px;
+
     }
 
     .blogside {
 
-      h4.miniblogheader {
+      h3.miniblogheader {
         color: $dark-grey;
+        font-weight: $font-weight-normal;
       }
 
       p.miniblogdate {
         color: $blue-grey;
+        font-size: 17px;
+      }
+
+      .miniblogimg {
+        margin-top: 40px;
+        margin-bottom: 40px;
       }
 
       p.miniblogtext {
         color: $dark-grey;
         font-size: 20px;
+        margin-bottom: 35px;
+        line-height: 1.5;
       }
 
     }
 
     .contactside {
+
+      @media #{$xs} {
+        margin-top: 80px;
+      }
+
       p {
         color: $dark-grey;
-        font-size: 18px;
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 30px;
       }
     }
   } 

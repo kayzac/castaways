@@ -1,4 +1,17 @@
 section {
   font-family: $body-font-family;
 
+  h2 {
+  	font-weight: $font-weight-normal;
+  	color: $blue-grey;
+  	margin-bottom: 80px;
+  	margin-top: 80px;
+  }
+
+  a.thumbnail {
+  	display: inline-block;
+  	margin-right: 40px;
+  	margin-bottom: 40px;
+  }
+
 }

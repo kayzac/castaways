@@ -20,15 +20,53 @@ section.index {
 	a.btn-about {
 		border-color: white;
 		color: white;
+		vertical-align: center;
+
+		&:hover {
+			background-color: white;
+			color: #3BA3AD;
+		}
 	}
 
 	a.btn-gallery {
 		border-color: #263C43;
 		color: #263C43;
+
+		&:hover {
+			background-color: #263C43;
+			color: white;
+		}
 	}
 
 	.splitcontent a.btn-default {
 		border-color: #4D7A88;
 		color: #4D7A88;
+
+		&:hover {
+			background-color: #4D7A88;
+			color: white;
+		}
+	}
+}
+
+section.contact {
+
+	.btn {
+		font-size: 18px;
+		padding: 6px 12px;
+		border-radius: 4px;
+		border-width: 1px;
+	}
+
+	.btn-default {
+		background-image: none;
+		background-color: #4D7A88;
+		font-weight: $font-weight-normal;
+		text-shadow: none;
+	}
+
+	.btn-contact {
+		color: white;
+		margin-top: 40px;
 	}
 }

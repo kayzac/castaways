@@ -3,17 +3,29 @@
 
 .navbar.navbar-default {
   font-family: $body-font-family;
-  background-color: $turquoise;
+  // background-color: $turquoise;
   border: none;
 
   .container-fluid {
-    background-color: $turquoise;
+    background: rgba(1, 91, 102, 0.35);
     padding-left: 108px;
     padding-right: 108px;
 
-    .navbar-header {
+    @media #{$screen-sm} {
+      padding-right: .7em;
+      padding-left: 2em;
+    }
+
+    @media #{$xs} {
+      padding-right: .7em;
+      padding-left: 2em;
+    }
+
+    .navbar-header.page-scroll {
         
       button.navbar-toggle {
+        margin-top: 40px;
+        margin-right: 20px;
           
         span.icon-bar {
 
@@ -26,8 +38,17 @@
         background-repeat: no-repeat;
         background-position: center;
         padding-right: 210px;
-        padding-top: 140px;
-        margin-bottom: -20px;
+        padding-top: 105px;
+        margin-bottom: 0px;
+
+        @media #{$screen-sm} {
+          background-size: 200px 200px;
+        }
+
+        @media #{$xs} {
+          background-size: 200px 200px; 
+          padding-right: 150px;
+        }
       } //closes navbar-brand
     } //closes .navbar-header
 
@@ -38,17 +59,26 @@
         // margin-bottom: -4px;
         
         li{
-          font-weight: $font-weight-thin;
+          font-weight: $font-weight-normal;
           font-size: 17px;          
         
           a.page-scroll {
-            color: white;
+            color: $dark-grey;
+
+            &:hover {
+              color: $turquoise;
+
+            @media #{$xs} {
+              background-color: white;
+              width: 100%;
+            }
+            }
           } //closes page-scroll
         } //closes li
 
         li.dropdown {
           font-size: 17px;
-          font-weight: $font-weight-thin;
+          font-weight: $font-weight-normal;
           
           a.dropdown-toggle {
 

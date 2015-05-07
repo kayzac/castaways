@@ -1,109 +1,113 @@
 <section class="index">
-  <div class="row">
-    <div class="col-md-12 col-xs-12">
-
-      <!--Carousel-->
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <ol>
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol><!--closes .carousel-indicators-->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <img src="/images/jasmine/jasmine1_smallcorrected.jpg" alt="image" />
-            <div class="carousel-caption">
-              Natural
-            </div><!--closes .carousel-caption-->
-          </div><!--closes item active-->
-          <div class="item">
-            <img src="/images/jasmine/jasmine2_small.jpg" alt="image" />
-            <div class="carousel-caption">
-              Hawaii Made
-            </div><!--closes .carousel-caption-->
-          </div><!--closes .item-->
-          <div class="item">
-            <img src="/images/jasmine/tjewel.jpg" alt="image" />
-            <div class="carousel-caption">
-              Inspired
-            </div><!--closes .carousel-caption-->
-          </div><!--closes .item-->
-          <div class="item">
-            <img src="/images/jasmine/seashell.jpg" alt="image" />
-            <div class="carousel-caption">
-              Local
-            </div><!--closes .carousel-caption-->
-          </div><!--closes .item-->
-        </div><!--closes .carousel-inner-->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a><!--closes .left carousel-control-->
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a><!--closes .right carousel-control-->
-      </div><!--closes .carousel-example-gneric-->     
-    </div><!--closes. col-12-->
-  </div><!--closes .row-->
+  <!--Carousel-->
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    {{!-- <ol>
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol><!--closes .carousel-indicators--> --}}
+    <div class="carousel-inner" role="listbox">
+      <div class="item active" style="background-image: url('/images/slideshow/slideshow1.jpg');">
+        <div class="carousel-caption">
+          Natural
+        </div><!--closes .carousel-caption-->
+      </div><!--closes item active-->
+      <div class="item" style="background-image: url('/images/slideshow/slideshow2.jpg');">
+        <div class="carousel-caption">
+          Hawaii Made
+        </div><!--closes .carousel-caption-->
+      </div><!--closes .item-->
+      <div class="item" style="background-image: url('/images/jasmine/jewel.jpg');">
+        <div class="carousel-caption">
+          Hand Crafted
+        </div><!--closes .carousel-caption-->
+      </div><!--closes .item-->    
+    </div><!--closes .carousel-inner-->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a><!--closes .left carousel-control-->
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a><!--closes .right carousel-control-->
+  </div><!--closes .carousel-example-gneric-->     
 
   <!--MAIN CONTENT-->
 
   <!--DIV TO ABOUT PAGE-->
   <div class="wrapper about_wrapper">
     <div class="transparent blue_transparent">
-      <div class="row">
-        <div class="col-md-12 col-xs-12 content_div">
-            <div class="aboutcontent">
-              <h3 class="meet">Meet The Creators Behind The Brand</h3>
-              <img src="/images/mari/girls.jpg" class="img-responsive img-circle img_girls" />
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12 content_div" id="aboutbox">
+            <div class="content">
+              <div class="row">
+                <div class="col-md-4 col-md-push-8 col-xs-12 circleimage">
+                  <img src="/images/mari/girls.jpg" class="img-responsive img-circle girls">
+                </div><!--closes .circleimage-->
+                <div class="col-md-8 col-md-pull-4 col-sm-12 col-xs-12 headertext">
+                  <div class="textlink">
+                    <h2 class="meet">Meet The Creators Behind The Brand</h3> 
+                    <a class="btn btn-default btn-about" href="/about" role="button">Our Story</a><!--closes about button--> 
+                  </div><!--closes .textlink-->          
+                </div><!--closes .headertext-->              
+              </div><!--closes .row-->
             </div><!--closes .content-->
-            <div class="about_button">
-              <a class="btn btn-default btn-about" href="/about" role="button">Our Story</a><!--closes about button-->
-            </div><!--closes .about_button-->
-        </div><!--closes .content_div-->       
-      </div><!--closes .row-->
+          </div><!--closes #aboutbox-->
+        </div><!--closes .row-->
+      </div><!--closes .container-fluid-->
     </div><!--closes .blue_transparent-->
   </div><!--closes about_wrapper-->
 
   <!--DIV TO GALLERY PAGE-->
   <div class="wrapper gallery_wrapper">
-    <div class="transparent grey_transparent">
-      <div class="row">    
-          <div class="col-md-12 col-xs-12 content_div">
-            <div class="gallerycontent">
-              <h3 class="meet">View Our Collection</h3>          
-              <img src="/images/jasmine/jewel.jpg" class="img-responsive img-circle circles" />
-              <img src="/images/jasmine/tjewel.jpg" class="img-responsive img-circle circles" />
-              <img src="/images/jasmine/seashell.jpg" class="img-responsive img-circle circles" />
-            </div><!--closes .gallerycontent-->
-            <div class="gallery_button">
-              <a class="btn btn-default btn-gallery" href="/gallery" role="button">See More</a><!--closes gallery button-->
-            </div><!--closes .gallery_button-->
-          </div><!--closes content_div-->
-      </div><!--closes .row-->
+    <div class="transparent grey_transparent"> 
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12 content_div" id="gallerybox">
+            <div class="content">
+              <div class="row">
+                <div class="col-md-7 col-xs-12 minicircles">
+                  <img src="/images/jasmine/jewel.jpg" class="img-responsive img-circle circles" />
+                  <img src="/images/jasmine/tjewel.jpg" class="img-responsive img-circle circles" />
+                  <img src="/images/jasmine/seashell.jpg" class="img-responsive img-circle circles" />
+                </div><!--closes .minicircles-->
+                <div class="col-md-5 col-sm-12 col-xs-12 headertext">
+                  <div class="othertextlink">
+                    <h2 class="meet">View Our Collection</h3> 
+                    <a class="btn btn-default btn-gallery" href="/about" role="button">See More</a><!--closes about button-->
+                  </div><!--closes .othertextlink-->             
+                </div><!--closes .headertext-->              
+              </div><!--closes .row-->
+            </div><!--closes .content-->
+          </div><!--closes #aboutbox-->
+        </div><!--closes .row-->
+      </div><!--closes .container-fluid-->      
     </div><!--closes grey_transparent-->
   </div><!--closes gallery_wrapper-->
 
   <!--BLOG/CONTACT SECTION-->
 
   <div class="splitcontent">
-    <div class="row">
-      <div class="col-md-8 col-xs-12 blogside">
-        <h2 class="splitblogheader">Recent Updates</h2>
-        <h4 class="miniblogheader">Lortem ipsum dolor sit amet</h4>
-        <p class="miniblogdate">March 2, 2015</p>
-        <img src="/images/jasmine/jasmine1_smallcorrected.jpg" class="img-responsive miniblogimg" />
-        <p class="miniblogtext">Lortem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed ex a leo placerat pellentesque. Proin nec malesuada lectus. In elementum auctor neque a malesuada. Donec nec molestie risus. Nunc at sagittis enim. Praesent id tortor nec augue imperdiet...</p>
-        <a class="btn btn-default" href="/blog" role="button">Read More</a><!--closes blog button-->
-      </div><!--closes blogside-->
-      <div class="col-md-4 col-xs-12 contactside">
-        <h2 class="splitcontactheader">Feedback</h2>
-        <p class="minicontacttext">Have a question?</br>
-                                  Or leave a comment!</br>
-                                  We're here to help!</p>
-        <a class="btn btn-default" href="/contact" role="button">Contact Us</a><!--closes contact button-->
-      </div><!--closes contactside-->
-    </div><!--closes .row-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-xs-12 blogside">
+          <h2 class="splitblogheader">Recent Updates</h2>
+          <h3 class="miniblogheader">Lortem ipsum dolor sit amet</h4>
+          <p class="miniblogdate">March 2, 2015</p>
+          <img src="/images/jasmine/jasmine1_smallcorrected.jpg" class="img-responsive miniblogimg" />
+          <p class="miniblogtext">Lortem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed ex a leo placerat pellentesque. Proin nec malesuada lectus. In elementum auctor neque a malesuada. Donec nec molestie risus. Nunc at sagittis enim. Praesent id tortor nec augue imperdiet...</p>
+          <a class="btn btn-default" href="/blog" role="button">Read More</a><!--closes blog button-->
+        </div><!--closes blogside-->
+        <div class="col-md-4 col-xs-12 contactside">
+          <h2 class="splitcontactheader">Feedback</h2>
+          <p class="minicontacttext">Have a question?</br>
+                                    Or leave a comment!</br>
+                                    We're here to help!</p>
+          <a class="btn btn-default" href="/contact" role="button">Contact Us</a><!--closes contact button-->
+        </div><!--closes contactside-->
+      </div><!--closes .row-->
+    </div><!--closes .container-fluid-->
   </div><!--closes .splitcontent-->
 </section>

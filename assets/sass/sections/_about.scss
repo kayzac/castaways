@@ -3,32 +3,47 @@ section {
 
   .wrapper {
 
-  	h3 {
+    .aboutcontent {
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+
+  	h2 {
   		color: $about-grey;
   		text-align: center;
+      margin-bottom: 40px;
+      font-weight: $font-weight-normal;
   	}
 
   	.about_paragraph {
-		font-size: 18px;
-		color: $about-grey;
-		max-width: 62.5%;
+		font-size: 19px;
+    line-height: 1.5;
+		// color: $about-grey;
+		// max-width: 62.5%;
   	}
   }
 
   #ourstory {
 	color: $about-grey;
+  // max-width: 72.5%;
+  margin-right: auto;
+  margin-left: auto;
   }
 
   .mari_wrapper {
 	background-color: $mari-blue;
 
-	p {
-		float: left;
-	}
+  	.mari_profile {
+  		// float: left;
+  	}
 
-	.mari_profile {
-		float: left;
-	}
+    .mari_paragraph {
+      float: left;
+
+      @media #{$xs} {
+        margin-top: 40px;
+      }
+    }
   }
 
   .jasmine_wrapper {
@@ -36,6 +51,11 @@ section {
 
   	p {
   		float: right;
+      color: $about-grey;
+
+      @media #{$xs} {
+        margin-top: 40px;
+      }
   	}
 
   	.jasmine_profile {
@@ -45,21 +65,31 @@ section {
 
   #faq {
 
-  	h3 {
+    .aboutcontent {
+      margin-bottom: 0;
+    }
+
+  	h2 {
   		color: $dark-grey;
+      font-weight: $font-weight-normal;
   	}
 
   	p {
-  		font-size: 18px;
+  		font-size: 19px;
   	}
 
-  	.faq_question {
-  		color: $blue-grey;
-  		
-  	}
+    .faqbox {
+      margin-top: 40px;
+    }
 
-  	.faq_answer {
-  		color: $dark-grey;
-  	}
+    .faq_question {
+        color: $blue-grey;
+        
+      }
+
+    .faq_answer {
+      color: $dark-grey;
+
+    }
   }
 }

@@ -73,8 +73,8 @@ body {
 	font-family: $body-font-family;
 
 	section {
-		margin-top: 90px;
 		margin-bottom: 80px;
+		margin-top: 120px;
 
 		.wrapper {
 
@@ -84,5 +84,11 @@ body {
 				// margin-left: auto;
 			}
 		}
+	}
+
+	.row {
+		margin-left: auto;
+		margin-right: auto;
+		// max-width: 85%;
 	}
 }

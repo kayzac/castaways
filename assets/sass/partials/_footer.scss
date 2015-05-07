@@ -11,19 +11,25 @@ footer {
     #source_copyright {
 
       p {
-        margin-left: 108px;
+        // margin-left: 108px;
 
       }//closes p
 
     }//closes #source copyright
 
     #photos_copyright {
+      line-height: 1.9;
 
       p.photography_copyright {
-        margin-left: 108px;
+        // margin-left: 108px;
 
         a.photolink {
           color: $footer-link-color;
+
+          &:hover {
+            text-decoration: none;
+            color: $transparent-blue;
+          }
 
         }
 
