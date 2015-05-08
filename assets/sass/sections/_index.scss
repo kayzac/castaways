@@ -67,23 +67,32 @@ section.index {
       }
 
       .textlink {
-        padding-top: 100px;
+        padding-top: 80px;
 
         @media #{$xs} {
           text-align: center;
           padding-top: 50px;
         }
       }
-
-      .circleimage {
-        width: 30%;
-        height: auto;
-        vertical-align: center;
+      
+      .circlewrapper {
 
         @media #{$xs} {
-          width: 90%;
-          margin-right: auto;
+          max-width: 80%;
           margin-left: auto;
+          margin-right: auto;
+        }
+
+        .circleimage {
+          width: 30%;
+          height: auto;
+          vertical-align: center;
+
+          @media #{$xs} {
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+          }
         }
       }
 
@@ -100,21 +109,29 @@ section.index {
     .grey_transparent {
       background-color: rgba(226, 233, 231, 0.85);
 
-      .circles {
-        width: 25%;
-        float: left;
-        margin-right: 35px;
+      .circlediv {
 
         @media #{$xs} {
-          width: 70%;
-          float: none;
-          margin-right: 0;
-          margin-bottom: 30px;
+          max-width: 55.5%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .circles {
+          width: 25%;
+          float: left;
+          margin-right: 40px;
+
+          @media #{$xs} {
+            width: 100%;
+            float: none;
+            margin-right: 0;
+            margin-bottom: 30px;
+          }
         }
       }
 
       .othertextlink {
-        padding-top: 40px;
 
         h2 {
 
@@ -133,7 +150,11 @@ section.index {
   // SPLIT SECTION
 
   .splitcontent {
-    margin-top: 80px;
+    margin-top: 30px;
+
+    @media #{$xs} {
+      margin-top: 5px;
+    }
 
     h2 {
       color: $dark-grey;
@@ -142,6 +163,11 @@ section.index {
       border-bottom: solid 1px $footer-text-color;
       padding: 5px 0;
       margin-bottom: 40px;
+
+      @media #{$xs} {
+        border-top: hidden;
+        border-bottom: hidden;
+      }
 
     }
 
@@ -174,7 +200,7 @@ section.index {
     .contactside {
 
       @media #{$xs} {
-        margin-top: 80px;
+        margin-top: 0;
       }
 
       p {

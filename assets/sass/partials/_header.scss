@@ -26,8 +26,12 @@
       button.navbar-toggle {
         margin-top: 40px;
         margin-right: 20px;
-          
+        background-color: $blue-grey;
+        border: none;
+
+
         span.icon-bar {
+          background-color: $transparent-offwhite;
 
         } //icon-bar
       } //navbar button

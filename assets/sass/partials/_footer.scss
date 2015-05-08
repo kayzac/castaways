@@ -21,7 +21,11 @@ footer {
       line-height: 1.9;
 
       p.photography_copyright {
-        // margin-left: 108px;
+        padding-left: 200px;
+
+        @media #{$xs} {
+          padding-left: 0;
+        }
 
         a.photolink {
           color: $footer-link-color;

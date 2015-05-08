@@ -4,7 +4,7 @@ section {
   .container {
 
     h2 {
-      margin-bottom: 40px;
+      margin-bottom: 80px;
     }
 
     p.contacttext {
@@ -23,59 +23,67 @@ section {
         color: $blue-grey;
       }
     }
-
-    .contactbox {
-      margin-top: 40px;
-      width: 32.5%;
-      margin-left: auto;
-      margin-right: auto;
+    
+    .contactcol {
 
       @media #{$xs} {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
       }
-      
-      form {
 
-        .form-group {
-
-          label {
-            font-weight: $font-weight-light;
-            font-size: 18px;
-          }
-        }
-      }
-      
-      .longforms {
-        width: 99%;
+      .contactbox {
+        margin-top: 40px;
+        width: 32.5%;
+        margin-left: auto;
+        margin-right: auto;
 
         @media #{$xs} {
           width: 100%;
           margin-left: 0;
           margin-right: 0;
         }
-      }
+        
+        form {
 
-      .form-horizontal {
+          .form-group {
 
-        .form-group {
-          margin-right: 0;
-          margin-left: 0;
+            label {
+              font-weight: $font-weight-light;
+              font-size: 18px;
+            }
+          }
         }
-      }
+        
+        .longforms {
+          width: 99%;
 
-      form.personalinfo {
-        display: inline-block;
+          @media #{$xs} {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+          }
+        }
 
-        .form-group {
+        .form-horizontal {
+
+          .form-group {
+            margin-right: 0;
+            margin-left: 0;
+          }
+        }
+
+        form.personalinfo {
           display: inline-block;
-        }
-      }
 
-      span {
-        font-size: 18px;
-        font-weight: $font-weight-light;
+          .form-group {
+            display: inline-block;
+          }
+        }
+
+        span {
+          font-size: 18px;
+          font-weight: $font-weight-light;
+        }
       }
     }
   }
